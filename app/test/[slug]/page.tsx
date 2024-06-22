@@ -1,6 +1,6 @@
 "use client"
 
-import { TestPage } from "@/src/pages/test-page";
+import { TestPage } from "@/src/pages_/test-page";
 import { TestHomePageProps, dataTypes } from "./types";
 import React from 'react';
 
@@ -8,6 +8,7 @@ const TestHomePage: React.FC<TestHomePageProps> = ({ params }) => {
   const [data, setData] = React.useState<dataTypes[]>([
     {
       id: 1,
+      title: 'Математика 5+',
       timer: {
         hours: 0,
         minutes: 0,
@@ -57,10 +58,12 @@ const TestHomePage: React.FC<TestHomePageProps> = ({ params }) => {
       ]
     }
   ])
-  const [testData] = React.useState(data.filter(item => item.id.toString() === params.slug.toString())[0])
+  
+  const [testData] = React.useState<dataTypes>(data.filter(item => item.id.toString() === params.slug.toString())[0])
+
   return (
     <main className="max-w-[900px] m-auto h-full p-6">
-      <TestPage title="Математика 5+" id={testData.id} questions={testData.questions} timer={testData.timer} />
+      <TestPage title={testData.title} id={testData.id} questions={testData.questions} timer={testData.timer} />
     </main>
   );
 };

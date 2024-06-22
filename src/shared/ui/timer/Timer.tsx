@@ -1,3 +1,5 @@
+'use client'
+
 import { Typography } from '@mui/material';
 import React from 'react';
 import { useEffect } from 'react';
@@ -31,11 +33,11 @@ export const Timer: React.FC<TimerProps> = ({ handleStopTest, deadline, isRunnin
 
   return (
     <div className="flex items-center">
-      <Typography variant="h6">{hours.toString().length >= 2 ? hours : `0${hours}`}</Typography>
-      <Typography variant="h6">:</Typography>
-      <Typography variant="h6">{minutes.toString().length >= 2 ? minutes : `0${minutes}`}</Typography>
-      <Typography variant="h6">:</Typography>
-      <Typography variant="h6">{seconds.toString().length >= 2 ? seconds : `0${seconds}`}</Typography>
+      <Typography component="span" variant="h6">{hours.toString().length >= 2 ? hours : `0${hours}`}</Typography>
+      <Typography component="span" variant="h6">:</Typography>
+      <Typography component="span" variant="h6">{minutes.toString().length >= 2 ? minutes : `0${minutes}`}</Typography>
+      <Typography component="span" variant="h6">:</Typography>
+      <Typography component="span" variant="h6">{seconds.toString().length >= 2 ? seconds : `0${seconds}`}</Typography>
     </div>
   );
 };

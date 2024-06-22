@@ -4,6 +4,7 @@ export interface TestHomePageProps {
 
 export interface dataTypes {
   id: number | string
+  title: string
   timer?: TimerTypes
   questions: questionsTypes[]
 }

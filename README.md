@@ -14,8 +14,8 @@ yarn dev
 
 ```js
   {
-    id: 1, // Test id
-    title: 'Математика 5+', \/\/ Test id
+    id: 1, // Test's id
+    title: 'Математика 5+', // Test's title
     timer: {
       hours: 0,
       minutes: 0,
@@ -24,7 +24,7 @@ yarn dev
     questions: [
       {
         id: 1,
-        title: '2 + 2 = ?',
+        title: '2 + 2 = ?', // Question's title
         answer: [4],
         answerVariants: [1, 4, 6, 7],
         type: 'radio',

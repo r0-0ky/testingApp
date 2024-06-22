@@ -1,4 +1,4 @@
-# Testing-app
+# Testing-app 📚
 
 Testing-app - flexible application for creating and passing tests
 

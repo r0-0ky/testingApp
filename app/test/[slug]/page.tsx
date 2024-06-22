@@ -1,11 +1,11 @@
 "use client"
 
-import { TestPage } from "@/src/pages_/test-page";
+import { TestPage } from "@/src/app-pages/test-page";
 import { TestHomePageProps, dataTypes } from "./types";
 import React from 'react';
 
 const TestHomePage: React.FC<TestHomePageProps> = ({ params }) => {
-  const [data, setData] = React.useState<dataTypes[]>([
+  const [data] = React.useState<dataTypes[]>([
     {
       id: 1,
       title: 'Математика 5+',

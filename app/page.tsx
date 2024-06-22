@@ -1,4 +1,4 @@
-import { MenuPage } from "@/src/pages_/menu-page";
+import { MenuPage } from "@/src/app-pages/menu-page";
 
 const Home: React.FC = () => {
   return (

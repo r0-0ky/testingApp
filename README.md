@@ -14,7 +14,7 @@ yarn dev
 
 ```js
   {
-    id: 1, \/\/ Test id
+    id: 1, // Test id
     title: 'Математика 5+', \/\/ Test id
     timer: {
       hours: 0,
